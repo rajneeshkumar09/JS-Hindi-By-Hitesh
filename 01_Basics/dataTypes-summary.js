@@ -33,7 +33,31 @@ const myfun = function() {
     console.log("Hello World!");
 } 
 
-console.log(typeof myfun);
+// console.log(typeof myfun);
 
 
 // JavaScript is a dynamic programming language
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack, Heap Memory
+
+let myYoutubename =  "hiteshchoudharydotcom";
+let anotherName = myYoutubename;
+anotherName = "chaiaurcode";
+
+console.log(myYoutubename);
+console.log(anotherName);
+
+
+let userOne = {
+    email: "user@gamil.com",
+    upi: "user@ybl"
+};
+
+let userTwo = userOne;
+
+userTwo.email = "hitesh@google.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
