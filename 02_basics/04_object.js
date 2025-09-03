@@ -82,3 +82,40 @@ console.log(Object.entries(tinderUser));    // reaturn an array with sub-arrays 
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 console.log(tinderUser.hasOwnProperty('isLoggedOut'));
+
+
+//++++++++++++++++++++++ Object Destractring ++++++++++++++++++++++++++++++++++++++++
+
+const course = {
+    course: "JS in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+// course.courseInstructor;
+// const {courseInstructor} = course;      //This method is used to access a value from an object. Like courseInstructor's value is accessed from course object.
+// console.log(courseInstructor);
+
+const {courseInstructor: instructor} = course;      //This method is used to access a value from an object with the another variable name. Like courseInstructor's value is accessed from course object with  the instructor variable name.
+
+console.log(instructor);
+
+/* React concept */
+// const navbar = ({company}) => {
+    //({company}) - here used the concept of object DESTRUCTRING 
+// }
+
+// navbar(company = "hitesh");
+
+/* JSON Format*/
+/*{
+    "name": "hitesh",
+    "coursename": "js in hindi",
+    "price": "999"
+}*/
+
+/*[
+    {},
+    {},
+    {}
+]*/
