@@ -15,6 +15,7 @@
         /* ===> random id generate <=== */ 
         div.id = Math.round(Math.random() * 10 + 1);
         console.log(div);
+        //div.setAttribute("property", "property-value");
         div.setAttribute("title", "generate title");
         div.style.backgroundColor = "green";
         div.style.padding = "12px";
@@ -25,6 +26,26 @@
         document.body.appendChild(div);
 
         /* Video 33 : create a function of this. pass arguments, open a loop 5 bar chalo ye color lo ya color ka array lo for background color  */
+
+        function createNewElement(className ,title, bgColor, content) {
+            const div = document.createElement('div');
+            div.className = className;
+            div.id = Math.round(Math.random() * 5 + 1);
+            div.setAttribute("title", title);
+            div.style.backgroundColor = bgColor;
+            div.style.padding = "15px";
+            const addText = document.createTextNode(content);
+            div.appendChild(addText);
+            document.body.appendChild(div);
+        }
+
+        for (let i=0; i<5; i++) {
+            const className = prompt("Enter the Class Name for an element : ");
+            const title = prompt("Enter the title for an element : ");
+            const bgColor = prompt("Enter the Background color name for an element : ");
+            const content = prompt("Enter the content for an element which is visible in dispaly : ");
+            //createNewElement(className, title, bgColor, content)
+        }
     </script>
 </body>
 </html>
