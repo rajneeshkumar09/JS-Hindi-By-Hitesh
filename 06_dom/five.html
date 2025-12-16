@@ -11,6 +11,7 @@
     </ul>
 
     <script>
+        // Basic method. This is traverse the whole tree of the document. It gives optimisition issue.
         function addLanguage(langName) {
             const li = document.createElement('li');
             li.innerHTML = `${langName}`;
@@ -32,11 +33,11 @@
         //secondLang.innerHTML = "Mojo";
         const newLi = document.createElement("li");
         newLi.textContent = "Mojo";
-        secondLang.replaceWith(newLi);
+        secondLang.replaceWith(newLi); //Used to replace content which is already exist.
 
         /* ===> Edit element on web page <=== */
         const firstLang = document.querySelector("li:first-child");
-        firstLang.outerHTML = "<li>Java</li>"
+        firstLang.outerHTML = "<li>Java</li>"   //It is compulsory to write with HTML Element when you used the method "outerHTML"
 
         /* ===> Remove element on web page <=== */
         const lastLang = document.querySelector("li:last-child");
